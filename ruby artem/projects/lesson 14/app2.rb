@@ -12,6 +12,11 @@ class Book
 			@hash = { a => b }
 		end
 
+=begin
+		def last_person
+
+		end
+=end
 		def show boook
 			puts @hash
 			

@@ -1,6 +1,5 @@
 class Country    
   attr_reader :countr
-  
   def initialize(countr)
     @countr = countr
   end

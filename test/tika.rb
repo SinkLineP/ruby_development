@@ -83,12 +83,13 @@ while true
 			end
 	end
 
+	while true
+		if x == 1
 
-
-	if x == 1
-
-		puts one
+			puts one
 	end
+
+	
 
 
 end

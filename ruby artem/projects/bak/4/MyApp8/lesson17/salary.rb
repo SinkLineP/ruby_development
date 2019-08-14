@@ -9,4 +9,4 @@ end
 input.close
 
 puts ""
-puts "Total: #{total}"
+puts "Total: ߷#{total}"

@@ -10,5 +10,7 @@ post '/' do
 	@datetime = params[:datetime]
 
 	@title = "Thank you!"
-	@message
+	@message = "Hello, '#{@username}' your application has been sent to '#{@datetime}'."
+
+	erb :message
 end

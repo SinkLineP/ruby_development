@@ -6,6 +6,8 @@ get '/' do
 	erb :index
 end
 
+
+
 get '/login' do
 	erb :login
 end
@@ -16,6 +18,7 @@ end
 
 post '/login' do
 	login = params[:login]
+	password = params[:password]
 
 	if login == "admin" && password == "karamalesa"
 		@logfile = File.open("user.txt","r")
@@ -28,8 +31,11 @@ post '/login' do
 
 end
 
+get '/visit' do 
+	erb :visit
+end
 
-post '/' do 
+post '/visit' do 
 		
 		@username = params[:username]
 		@phone = params[:phone]
@@ -52,7 +58,7 @@ post '/' do
 end
 
 
-post '/' do #огда браузер хочет отправить какие-то данные
+post '/visit' do #огда браузер хочет отправить какие-то данные
 	
 end
 

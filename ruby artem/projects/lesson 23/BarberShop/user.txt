@@ -51,3 +51,5 @@ User: , Phone: , Date and time: , Barber: -=Не выбрано=-
 User: , Phone: , Date and time: , Barber: -=Не выбрано=-
 User: , Phone: , Date and time: , Barber: -=Не выбрано=-
 User: , Phone: , Date and time: 2.09.2019, Barber: -=Не выбрано=-
+User: , Phone: , Date and time: ыффы, Barber: -=Не выбрано=-
+User: , Phone: 0508538886, Date and time: , Barber: -=Не выбрано=-

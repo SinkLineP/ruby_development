@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/reloader'
 
-@hash = [@username == "" && @phone == "" && @datetime == "" && @barber == "-=Не выбрано=-" || @username == "" || @barber == "-=Не выбрано=-" || @phone == "" || @datetime == "" || @username == "" && @phone == "" || @username == "" && @datetime == "" || @username == "" && @barber == "-=Не выбрано=-" || @phone == "" && @datetime == "" || @phone == "" && @barber == "-=Не выбрано=-" || @datetime == "" && @barber == "-=Не выбрано=-"]
+@hash = []
 #-------------------------------------------------------------------------------------------
 get '/' do 
 	erb :index
@@ -45,9 +45,10 @@ post '/visit' do
 		@barber = params[:barber]
 		@color = params[:color]
 
-	if @hash
+	if @username == "" && @phone == "" && @datetime == "" && @barber == "-=Не выбрано=-" || @username == "" || @barber == "-=Не выбрано=-" || @phone == "" || @datetime == "" || @username == "" && @phone == "" || @username == "" && @datetime == "" || @username == "" && @barber == "-=Не выбрано=-" || @phone == "" && @datetime == "" || @phone == "" && @barber == "-=Не выбрано=-" || @datetime == "" && @barber == "-=Не выбрано=-"
 
 		@title = "Вы не заполнили формы"
+		erb :error
 	else
 
 		@title = "Thank you!"
@@ -59,6 +60,9 @@ post '/visit' do
 
 		erb :message
 	end
+
+	erb :visit
+
 end
 
 

